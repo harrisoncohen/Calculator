@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    float firstNumber;
+    float secondNumber;
+    BOOL op;
+    int operation;
+}
+- (IBAction)getNumber:(id)sender;
+- (IBAction)getOperator:(id)sender;
+- (IBAction)doMath:(id)sender;
+- (IBAction)Clear:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *Answer;
 
 @end
